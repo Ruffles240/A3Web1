@@ -9,7 +9,7 @@ let darkToggle=false;
 
 function myFunction() {
 
-
+  const elements = document.querySelectorAll('header');
 
 
   if(!darkToggle){
@@ -21,6 +21,10 @@ function myFunction() {
   
 
   darkToggle=true;
+
+  elements.forEach(element => {
+    element.style.backgroundColor= "var(--header_night)";
+  });
 
   document.querySelector('header').style.backgroundColor="var(--header_night)";
   document.getElementById('dark_mode').innerHTML = "Day Mode";
@@ -36,7 +40,10 @@ function myFunction() {
   {
     document.getElementById('intro').style.backgroundImage = 'linear-gradient(rgba(18, 121, 70, 0.1), rgba(40, 92, 102, 0.11)), url("images/img2.avif")';
     document.body.style.color = 'black';
-    
+   
+    elements.forEach(element => {
+      element.style.backgroundColor= "var(--header_day)";
+    });
 
     document.body.style.backgroundColor= "var(--main_day)";
     document.getElementById('dark_mode').style.color="black";
