@@ -155,8 +155,13 @@ header{
 
 .section{
 
-    height: 100vh;
-    box-sizing: border-box;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
@@ -180,6 +185,7 @@ h6,h5,h4,h3,h2,h1, nav ul li{
 #education{
    
     background-size: cover;
+    
 }
 
 
@@ -192,12 +198,14 @@ h6,h5,h4,h3,h2,h1, nav ul li{
 
 .dayBackGround1{
     background-image:  var(--day_two);
-
+    background-repeat: repeat;
+    background-color: rgb(39, 132, 155);
 }
 
 .nightBackGround1{
 
     background-image: var(--night_two);
+    background-color: rgb(2, 2, 53);
 }
 
 #profile{
