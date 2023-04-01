@@ -42,6 +42,9 @@ nav{
     width: 100%;
 }
 
+button:hover{
+    transform: scale(110%);
+}
 
 
 nav ul li{
@@ -109,7 +112,7 @@ header{
     font-size: large;
     position: fixed;
     bottom: 14%;
-    right: 0%;
+    right: 2%;
     z-index: 1;
 
    
@@ -202,4 +205,11 @@ h6,h5,h4,h3,h2,h1, nav ul li{
     
     align-items: center;
    
+}
+
+
+.image_link:hover{
+
+   
+   transform: scale(110%);
 }
