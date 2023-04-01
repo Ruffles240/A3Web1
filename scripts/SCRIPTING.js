@@ -73,3 +73,21 @@ function Top(){
   });
  
 }
+
+let hamburgherToggle = false;
+
+function hamburgher(){
+
+  if(!hamburgherToggle){
+
+  document.getElementById('hamburgher-header').style.display = "block";
+  document.getElementById('hamburgher-header').style.backgroundColor = document.querySelector('header').style.backgroundColor;
+    hamburgherToggle=true;
+}
+
+  else{
+
+    document.getElementById('hamburgher-header').style.display = "none";
+    hamburgherToggle=false;
+  }
+}
