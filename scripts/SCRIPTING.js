@@ -24,8 +24,10 @@ function myFunction() {
 
   document.querySelector('header').style.backgroundColor="var(--header_night)";
   document.getElementById('dark_mode').innerHTML = "Day Mode";
-  document.getElementById('dark_mode').style.backgroundColor="var(--day_mode_btn)";
-  document.getElementById('resume').style.backgroundImage="var(--night_two)";
+  document.getElementById('dark_mode').style.backgroundColor="var(--header_night)";
+  document.getElementById('education').classList.remove("dayBackGround1")
+  document.getElementById('education').classList.add("nightBackGround1");
+ 
  
   }
 
@@ -41,9 +43,9 @@ function myFunction() {
     darkToggle=false;
     document.querySelector('header').style.backgroundColor="var(--header_day)";
     document.getElementById('dark_mode').innerHTML = "Night Mode";
-    document.getElementById('dark_mode').style.backgroundColor = "var(--night_mode_btn)";
-    document.getElementById('resume').style.backgroundImage ="var(--day_two)";
-   
+    document.getElementById('dark_mode').style.backgroundColor = "var(--header_day)";
+    document.getElementById('education').classList.remove("nightBackGround1");
+    document.getElementById('education').classList.add("dayBackGround1");
   }
 
 }

@@ -2,12 +2,15 @@
 :root {
     --main_day: rgba(92, 177, 208, 0.9);
     --header_day: rgba(105, 240, 238, 0.853);
-    --main_night: rgba(51, 73, 101, 0.9);
-    --header_night: rgba(105, 138, 214, 0.852);
+    --main_night: rgba(35, 53, 78, 0.9);
+    --header_night: rgba(31, 64, 143, 0.852);
     --day_image: url("../images/img2.avif");
     --night_mode_btn: rgba(51, 73, 101, 0.8);
     --day_mode_btn: rgb(112, 164, 89, 0.8);
-    --day_two: url("../images/Day.jpg");
+    --day_two: linear-gradient(
+        rgba(105, 240, 238, 0.3),
+        rgba(105, 240, 238, 0.3)
+      ), url("../images/Day.png");
     --night_two: url("../images/Night.jpg");
   }
 
@@ -88,7 +91,7 @@ header{
     background-color: var(--header_day);
     display: flex;
     flex-direction: column;
-   position: fixed;
+   position: sticky;
    top: 0%;
    width: 100%;
    
@@ -97,7 +100,7 @@ header{
 
 
 #dark_mode{
-    background-color: var(--night_mode_btn);
+    background-color: var(--header_day);
     border: none;
     border-radius: 40px;
     font-weight: bolder;
@@ -121,10 +124,7 @@ header{
 
 
 
-article{
-    padding: 7.5%;
-    
-}
+
 
 
 @media screen and (max-width:500px) {
@@ -153,12 +153,15 @@ article{
 .section{
 
     height: 100vh;
+    box-sizing: border-box;
 }
 
 
 h6,h5,h4,h3,h2,h1, nav ul li{
 
     font-family: "Playfair Display", "Times New Roman", serif;
+
+    text-align: center;
 }
 @font-face {
     font-family: "Abril Fatface";
@@ -171,8 +174,32 @@ h6,h5,h4,h3,h2,h1, nav ul li{
     clear: right;
 }
 
-#resume{
-
-    background-image: var(--day_two);
+#education{
+   
     background-size: cover;
+}
+
+
+
+.clearBackground{
+
+    background-image: none;
+
+}
+
+.dayBackGround1{
+    background-image:  var(--day_two);
+
+}
+
+.nightBackGround1{
+
+    background-image: var(--night_two);
+}
+
+#profile{
+    display: flex;
+    
+    align-items: center;
+   
 }
