@@ -14,7 +14,9 @@
     --night_two: url("../images/Night.jpg");
   }
 
-  
+  html {
+    scroll-behavior: smooth;
+  }
 body{
     color: black;
 
@@ -38,6 +40,8 @@ nav ul{
 nav{
 
    
+
+
 
     width: 100%;
 }
@@ -109,11 +113,12 @@ header{
     font-weight: bolder;
     color: black;
     text-decoration: underline;
-    font-size: large;
+    font-size: 30px;
     position: fixed;
     bottom: 14%;
     right: 2%;
     z-index: 1;
+  
 
    
  
@@ -121,7 +126,7 @@ header{
 
 }
 #main_heading {
-    font-size: 5vw;
+    font-size: 100px;
      
 }
 
@@ -130,16 +135,6 @@ header{
 
 
 
-@media screen and (max-width:500px) {
-
-    :root{
-        --header_green: rgba(112, 164, 89, 0);
-        --header_night: rgba(98, 164, 211, 0);
-    }
-
-   
-    
-}
 
 
 #intro{
@@ -236,7 +231,7 @@ border: none;
 .next-section img{
 
 
-    width: 50px;
+    width: 20%;
 
     
 }
@@ -250,3 +245,50 @@ a {
     color: inherit;
   }
 
+
+
+li a:hover{
+
+    color: inherit;
+}
+
+a img{
+
+    width: 100%;
+}
+
+.contacts a{
+
+width: 7%;
+
+}
+
+.contacts{
+
+    gap: 10px;
+
+    justify-content: center;
+}
+
+
+@media screen and (max-width:576px) {
+
+    :root{
+        --header_green: rgba(112, 164, 89, 0);
+        --header_night: rgba(98, 164, 211, 0);
+    }
+
+   
+    
+}
+
+@media screen and (max-width:768px) {
+
+   
+    #main_heading {
+        font-size: 70px;
+         
+    }
+    
+    
+}
