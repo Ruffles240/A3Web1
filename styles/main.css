@@ -279,7 +279,11 @@ width: 7%;
     }
 
    
-    
+    #dark_mode{
+        font-size: 20px;
+
+
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -291,4 +295,5 @@ width: 7%;
     }
     
     
+
 }
