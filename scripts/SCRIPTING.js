@@ -49,3 +49,27 @@ function myFunction() {
   }
 
 }
+
+
+
+function scrollPast(button){
+
+
+const parent= button.parentElement;
+
+const next = parent.nextElementSibling;
+
+window.scrollTo({
+  top: next.offsetTop + 1,
+  behavior: 'smooth'
+});
+}
+
+
+function Top(){
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+ 
+}

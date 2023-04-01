@@ -221,3 +221,32 @@ h6,h5,h4,h3,h2,h1, nav ul li{
    
    transform: scale(110%);
 }
+
+.next-section{
+
+
+margin-bottom: 0%;
+
+background-color: rgba(5, 116, 207, 0);
+
+border: none;
+    
+}
+
+.next-section img{
+
+
+    width: 50px;
+
+    
+}
+
+#backtoTop{
+
+    rotate: 180deg;
+}
+
+a {
+    color: inherit;
+  }
+
