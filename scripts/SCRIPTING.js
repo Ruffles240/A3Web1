@@ -34,7 +34,7 @@ function myFunction() {
   else
   
   {
-    document.getElementById('intro').style.backgroundImage = 'url("images/img2.avif")';
+    document.getElementById('intro').style.backgroundImage = 'linear-gradient(rgba(18, 121, 70, 0.1), rgba(40, 92, 102, 0.11)), url("images/img2.avif")';
     document.body.style.color = 'black';
     
 

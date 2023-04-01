@@ -1,10 +1,11 @@
 
 :root {
-    --main_day: rgba(92, 177, 208, 0.9);
+    --main_day:  rgba(92, 177, 208, 0.9);
     --header_day: rgba(105, 240, 238, 0.853);
     --main_night: rgba(35, 53, 78, 0.9);
     --header_night: rgba(31, 64, 143, 0.852);
-    --day_image: url("../images/img2.avif");
+    --day_image: linear-gradient( rgba(18, 121, 70, 0.1),
+             rgba(40, 92, 102, 0.11)), url("../images/img2.avif");
     --night_mode_btn: rgba(51, 73, 101, 0.8);
     --day_mode_btn: rgb(112, 164, 89, 0.8);
     --day_two: linear-gradient(
@@ -98,9 +99,9 @@ header{
     background-color: var(--header_day);
     display: flex;
     flex-direction: column;
-   position: sticky;
-   top: 0%;
-   width: 100%;
+    position: fixed;
+    top: 0%;
+    width: 100%;
    
   z-index: 1;
 }
@@ -273,11 +274,10 @@ width: 7%;
 
 @media screen and (max-width:576px) {
 
-    :root{
-        --header_green: rgba(112, 164, 89, 0);
-        --header_night: rgba(98, 164, 211, 0);
-    }
+    header{
 
+        display: none;
+    }
    
     #dark_mode{
         font-size: 20px;
@@ -296,4 +296,10 @@ width: 7%;
     
     
 
+}
+
+
+a:hover, button:hover{
+
+    cursor: pointer;
 }
