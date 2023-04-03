@@ -23,7 +23,7 @@
     <body>
 
      
-
+        <a href="#main-content" class="skip-navigation">Skip Navigation</a>
         <button id="dark_mode" onclick="myFunction()">Night Mode</button>
 
               
@@ -35,29 +35,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#profile">About Me</a>
+                        <a href="#main-content">About Me</a>
                     </li>
                     <li>
-                        <a href="#education">Resume</a>
-                    </li>
-                    <li>
-                        My Passions
-                    </li>
-                </ul>
-            </nav>
-            </div>
-
-        </header>
-        <header id="hamburgher-header">
-            <div class="row">
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#profile" onclick="hamburgher()">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#education" onclick="hamburgher()">Resume</a>
+                        <a href="#education" >Resume</a>
                     </li>
                     <li>
                         My Passions
@@ -68,13 +49,13 @@
 
         </header>
 
-        <button id = "hamburgher" onclick="hamburgher()"><img src="images/hamburgher.png"></button>
+        <button id = "hamburgher" onclick="hamburgher()"><img src="images/hamburgher.png" alt="Hamburger menu"></button>
 
-
+        <main>
         <nav id = "intro" class="text-center section">
 
             <h1 id="main_heading">Raphael Khan</h1>
-            <div class="d-flex contacts">
+            <div class="contacts">
             <a href="https://www.linkedin.com/in/raphael-khan-731448230" target="_blank" alt="my LinkedIn">
                 <img src="images/LinkedIn.png"  alt="LinkedIn Logo" class="image_link">
             </a>
@@ -88,12 +69,12 @@
 
        
 
-        <main id="profile" class="section">
+        <div id="main-content" class="section">
 
         
             
 
-            <article class="container-fluid">
+            <article class="container">
                 <h1 class="text-center">Profile</h1>
                 <div class="col-12">
                     <h2 class="text-center">About Me</h2 >
@@ -101,7 +82,7 @@
 
 
                         <p>Welcome to my website, I am a third year student at Mount Royal University studying Computer Information Systems, where I have been passionate and involved in the student community. I am determined
-                        always keep learning more about new technology and getting more experience in the field. Right now I am particularly in machine learning and data analysis.
+                        always keep learning more about new technology and getting more experience in the field. Right now I am particularly interested in machine learning and data analysis.
                         </p>        
                 </div>
                 <div class="row  clear text-center text-md-left">
@@ -130,7 +111,7 @@
                 </div>
             </article>
             <button class="next-section" onclick ="scrollPast(this)" alt="button to skip section"><img src="images/down.png"  alt="a down pointing arrow"></button>
-        </main>
+        </div>
 
         <div id="education" class="section dayBackGround1">
 
@@ -221,5 +202,6 @@
             <h4 class="my-5"><a href="files/Resume_Raphael Khan.pdf" download> Download Resume</a></h4>
             <button class="next-section" id = "backtoTop" onclick ="Top()" alt="Click to return to the top"><img src="images/down.png"  alt="an up pointing arrow"></button>
         </div>
+    </main>
     </body>
 </html>

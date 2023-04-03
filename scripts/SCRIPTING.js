@@ -87,14 +87,14 @@ function hamburgher(){
 
   if(!hamburgherToggle){
 
-  document.getElementById('hamburgher-header').style.display = "block";
-  document.getElementById('hamburgher-header').style.backgroundColor = document.querySelector('header').style.backgroundColor;
+  document.querySelector('header').classList.add("header_show");
+ 
     hamburgherToggle=true;
 }
 
   else{
 
-    document.getElementById('hamburgher-header').style.display = "none";
+    document.querySelector('header').classList.remove("header_show");
     hamburgherToggle=false;
   }
 }
