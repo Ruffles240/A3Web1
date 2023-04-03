@@ -9,28 +9,30 @@ let darkToggle=false;
 
 function myFunction() {
 
-  const elements = document.querySelectorAll('header');
-
+  const elements = document.querySelectorAll('header, footer');
+  
 
   if(!darkToggle){
-  document.getElementById('intro').style.backgroundImage = 'url("images/dark_mode.jpg")';
-  document.body.style.color = 'white';
-  document.getElementById('dark_mode').style.color="white"
-  
-  document.body.style.backgroundColor = "var(--main_night)";
-  
+    document.getElementById('intro').style.backgroundImage = 'var(--dark_mode_main)';
+    document.body.style.color = 'white';
+    document.getElementById('dark_mode').style.color="var(--night_text)";
+    
+    document.body.style.backgroundColor = "var(--main_night)";
+    
 
-  darkToggle=true;
+    darkToggle=true;
 
-  elements.forEach(element => {
-    element.style.backgroundColor= "var(--header_night)";
-  });
+    elements.forEach(element => {
+      element.style.backgroundColor= "var(--header_night)";
+    });
 
-  document.querySelector('header').style.backgroundColor="var(--header_night)";
-  document.getElementById('dark_mode').innerHTML = "Day Mode";
-  document.getElementById('dark_mode').style.backgroundColor="var(--header_night)";
-  document.getElementById('education').classList.remove("dayBackGround1")
-  document.getElementById('education').classList.add("nightBackGround1");
+    document.querySelector('header').style.backgroundColor="var(--header_night)";
+    document.getElementById('dark_mode').innerHTML = "Day Mode";
+    document.getElementById('dark_mode').style.backgroundColor="var(--header_night)";
+    document.getElementById('education').classList.remove("dayBackGround1")
+    document.getElementById('education').classList.add("nightBackGround1");
+    
+    document.querySelector('footer').style.backgroundColor = "var(--header_night)";
  
  
   }
@@ -38,8 +40,8 @@ function myFunction() {
   else
   
   {
-    document.getElementById('intro').style.backgroundImage = 'linear-gradient(rgba(18, 121, 70, 0.1), rgba(40, 92, 102, 0.11)), url("images/img2.avif")';
-    document.body.style.color = 'black';
+    document.getElementById('intro').style.backgroundImage = 'var(--day_image)';
+    document.body.style.color = "var(--day_text)";
    
     elements.forEach(element => {
       element.style.backgroundColor= "var(--header_day)";
@@ -53,6 +55,8 @@ function myFunction() {
     document.getElementById('dark_mode').style.backgroundColor = "var(--header_day)";
     document.getElementById('education').classList.remove("nightBackGround1");
     document.getElementById('education').classList.add("dayBackGround1");
+    document.querySelector('footer').style.backgroundColor = "var(--header_day)" ;
+
   }
 
 }
