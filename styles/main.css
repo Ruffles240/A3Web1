@@ -4,28 +4,33 @@
     --header_day: rgba(105, 240, 238, 0.853);
     --main_night: rgba(35, 53, 78, 0.9);
     --header_night: rgba(31, 64, 143, 0.852);
-    --day_image: linear-gradient( rgba(18, 121, 70, 0.1),
-             rgba(40, 92, 102, 0.11)), url("../images/img2.avif");
+    --day_image: linear-gradient( rgba(18, 99, 121, 0.264),
+             rgba(49, 101, 111, 0.214)), url("./images/img2.avif");
     --night_mode_btn: rgba(51, 73, 101, 0.8);
     --day_mode_btn: rgb(112, 164, 89, 0.8);
     --day_two: linear-gradient(
         rgba(105, 240, 238, 0.3),
         rgba(105, 240, 238, 0.3)
-      ), url("../images/Day.png");
-    --night_two: url("../images/Night.jpg");
+      ), url("./images/Day.png");
+    --night_two: url("./images/Night.jpg");
+
+    --dark_mode_main: url("./images/dark_mode.jpg");
 
     --day_bg_2: rgb(39, 132, 155);
 
     --night_bg_2: rgb(2, 2, 53);
 
     --button_bg: rgba(48, 69, 104, 0.638);
+
+    --day_text:black;
+    --night_text:white;
   }
 
   html {
     scroll-behavior: smooth;
   }
 body{
-    color: black;
+    color: var(--day_text);
 
     background-color: var(--main_day);
   }
@@ -80,7 +85,7 @@ nav ul li:hover{
 #portrait{
 
     height:auto;
-    width: 25%;
+    width: 20%;
 
     
 
@@ -160,12 +165,21 @@ header{
 .section{
 
     min-height: 100vh;
-
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
+}
+
+.section div{
+
+    max-width: 1000px;
+}
+.section div h1{
+
+    padding: 4%;
 }
 
 
@@ -186,11 +200,7 @@ h6,h5,h4,h3,h2,h1, nav ul li{
     clear: right;
 }
 
-#education{
-   
-    background-size: cover;
-    
-}
+
 
 
 

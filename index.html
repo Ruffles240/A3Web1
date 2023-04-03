@@ -35,13 +35,16 @@
             <nav>
                 <ul>
                     <li>
+                        <a href="#" class="selected">Main Page</a>
+                    </li>
+                    <li>
                         <a href="#main-content">About Me</a>
                     </li>
                     <li>
                         <a href="#education" >Resume</a>
                     </li>
                     <li>
-                        My Passions
+                        <a href="passions.html" >Passions</a>
                     </li>
                 </ul>
             </nav>
@@ -49,21 +52,21 @@
 
         </header>
 
-        <button id = "hamburgher" onclick="hamburgher()"><img src="images/hamburgher.png" alt="Hamburger menu"></button>
+        <button id = "hamburgher" onclick="hamburgher()"><img src="images/hamburgher.png" title="Hamburger menu"></button>
 
         <main>
         <nav id = "intro" class="text-center section">
 
             <h1 id="main_heading">Raphael Khan</h1>
             <div class="contacts">
-            <a href="https://www.linkedin.com/in/raphael-khan-731448230" target="_blank" alt="my LinkedIn">
+            <a href="https://www.linkedin.com/in/raphael-khan-731448230" target="_blank" title="my LinkedIn">
                 <img src="images/LinkedIn.png"  alt="LinkedIn Logo" class="image_link">
             </a>
-            <a href="mailto:rkhan461@mtroyal.ca" target="_blank" alt="Email me!">
+            <a href="mailto:rkhan461@mtroyal.ca" target="_blank" title="Email me!">
                 <img src="images/email.png" alt="An email logo" class="image_link">
             </a>
             </div>
-            <button class="next-section" onclick ="scrollPast(this)" alt="button to skip section"><img src="images/down.png"  alt="a down pointing arrow"></button>
+            <button class="next-section" onclick ="scrollPast(this)" title="button to skip section"><img src="images/down.png"  alt="a down pointing arrow"></button>
 
         </nav>
 
@@ -74,10 +77,10 @@
         
             
 
-            <article class="container">
-                <h1 class="text-center">Profile</h1>
+            <div class="container">
+                <h2 class="text-center">About Me</h2>
                 <div class="col-12">
-                    <h2 class="text-center">About Me</h2 >
+                    
                     <img src="images/1651380878125.jpg" id ="portrait" class="rounded-circle" alt="My self portrait">
 
 
@@ -109,17 +112,17 @@
                         <p>rkhan461@mtroyal.ca</p>
                     </div>
                 </div>
-            </article>
-            <button class="next-section" onclick ="scrollPast(this)" alt="button to skip section"><img src="images/down.png"  alt="a down pointing arrow"></button>
+            </div>
+            <button class="next-section" onclick ="scrollPast(this)" title="button to skip section"><img src="images/down.png"  alt="a down pointing arrow"></button>
         </div>
 
         <div id="education" class="section dayBackGround1">
 
             
-            <article>
-            <h1 class="text-center">Education</h1>
+            <div>
+            <h2 class="text-center">Education</h2>
 
-            <h2 class="text-center">Mount Royal University</h2>
+            <h3 class="text-center">Mount Royal University</h3>
             <p class="text-center">Computer Information Systems. 2020-2024</p>
             
             <div class="container text-center text-md-left">
@@ -147,13 +150,16 @@
             </div>
           
             
-            </article>
-            <button class="next-section" onclick ="scrollPast(this)" alt="button to skip section"><img src="images/down.png"  alt="a down pointing arrow"></button>
+            </div>
+            <button class="next-section" onclick ="scrollPast(this)" title="button to skip section"><img src="images/down.png"  alt="a down pointing arrow"></button>
         </div>
 
         <div class="section">
+            
             <div class="container">
-                <h1>Work Experience</h1>
+                <br>
+                <br>
+                <h2>Work Experience</h2>
                 <div class="row">
                 <div class="col-12 col-md-6">
                     <h3>Coach, Fitset Ninja</h3>
@@ -195,12 +201,12 @@
                 </div>
             </div>
 
-
+            <h4><a href="./files/Resume(Raphael_Khan).pdf" download> Download Resume</a></h4>
             </div>
 
        
-            <h4 class="my-5"><a href="files/Resume_Raphael Khan.pdf" download> Download Resume</a></h4>
-            <button class="next-section" id = "backtoTop" onclick ="Top()" alt="Click to return to the top"><img src="images/down.png"  alt="an up pointing arrow"></button>
+            
+            <button class="next-section" id = "backtoTop" onclick ="Top()" title="Click to return to the top"><img src="images/down.png"  alt="an up pointing arrow"></button>
         </div>
     </main>
     </body>
