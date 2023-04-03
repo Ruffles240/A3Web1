@@ -13,12 +13,12 @@ function myFunction() {
   
 
   if(!darkToggle){
-    document.getElementById('intro').style.backgroundImage = 'var(--dark_mode_main)';
-    document.body.style.color = 'white';
-    document.getElementById('dark_mode').style.color="var(--night_text)";
-    
-    document.body.style.backgroundColor = "var(--main_night)";
-    
+  document.getElementById('intro').style.backgroundImage = 'url("images/dark_mode.jpg")';
+  document.body.style.color = 'white';
+  document.getElementById('dark_mode').style.color="white"
+  
+  document.body.style.backgroundColor = "var(--main_night)";
+  
 
     darkToggle=true;
 
